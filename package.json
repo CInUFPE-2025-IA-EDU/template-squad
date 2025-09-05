@@ -1,0 +1,17 @@
+{
+  "name": "lmf-squads-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint docs/**/*.js",
+    "html": "npx html-validate docs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run html && npm run format:check"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "html-validate": "^8.0.0",
+    "prettier": "^3.3.0"
+  }
+}
