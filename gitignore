@@ -1,0 +1,62 @@
+# ---------- SO / Editor ----------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.local
+
+# ---------- Logs & diagnostics ----------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+report.*.json
+
+# ---------- Node / Package managers ----------
+node_modules/
+.bun/
+.pnp/
+.pnp.js
+.npm/
+.turbo/
+.eslintcache
+.parcel-cache/
+.cache/
+jspm_packages/
+typings/
+
+# ---------- Builds / Output ----------
+dist/
+build/
+coverage/
+lib-cov/
+.nyc_output/
+storybook-static/
+.out/
+
+# ---------- Frameworks (ignorar se não usar) ----------
+.next/
+out/
+.nuxt/
+.svelte-kit/
+.docusaurus/
+.vercel/
+.netlify/
+.vite/
+
+# ---------- Env / credenciais ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Packaged archives ----------
+*.tgz
+
+# ---------- Dependências lock (opcional ignorar em front-end estático)
+# Se quiser versionar o lockfile, remova a linha correspondente abaixo.
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
