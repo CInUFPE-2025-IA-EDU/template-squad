@@ -1,4 +1,4 @@
-'use strict';
-document.getElementById('hello').addEventListener('click', () => {
-  alert('JS funcionando!');
+"use strict";
+document.getElementById("hello").addEventListener("click", () => {
+  alert("JS funcionando!");
 });
