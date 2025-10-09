@@ -1,0 +1,17 @@
+{
+  "name": "lava-jato-squad",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "npm run lint && npm run html-validate && npm run prettier-check",
+    "lint": "eslint docs/main.js",
+    "html-validate": "html-validate docs/*.html",
+    "prettier-check": "prettier --check docs/",
+    "prettier-fix": "prettier --write docs/"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "html-validate": "^8.7.4",
+    "prettier": "^3.3.3"
+  }
+}
