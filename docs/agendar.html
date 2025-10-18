@@ -1,15 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agendar</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header><h1>Agendar</h1><nav><a href="index.html">Home</a></nav></header>
-  <main><section><p>Formulário multi-etapas aqui.</p></section></main>
-  <footer><p>&copy; 2025</p></footer>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Agendar</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+
+    <main class="form">
+      <section class="form__section">
+        <div class="form__container">
+          <form action="#" class="form__form">
+            <div class="form__content">
+              <div class="form__header">
+                <div class="form__header-title">
+                  <h2 class="form__title">Agendamento</h2>
+                </div>
+              </div>
+
+              <div class="form__field">
+                <label for="cliente-nome" class="form__label">Nome</label>
+                <input
+                  type="text"
+                  name="cliente_nome"
+                  id="cliente-nome"
+                  class="form__input"
+                  placeholder="Nome completo"
+                  minlength="5"
+                  maxlength="255"
+                />
+              </div>
+
+              <div class="form__field">
+                <label for="cliente-telefone" class="form__label"
+                  >Telefone</label
+                >
+                <input
+                  type="tel"
+                  name="cliente_telefone"
+                  id="cliente-telefone"
+                  class="form__input"
+                  placeholder="Telefone (WhatsApp)"
+                  minlength="10"
+                  maxlength="15"
+                />
+              </div>
+
+              <div class="form__field">
+                <label for="cliente-email" class="form__label">Email</label>
+                <input
+                  type="email"
+                  name="cliente_email"
+                  id="cliente-email"
+                  class="form__input"
+                  placeholder="Email"
+                  minlength="6"
+                  maxlength="254"
+                />
+              </div>
+
+              <div class="form__field">
+                <label for="cliente-veiculo-marca" class="form__label"
+                  >Marca do Veículo</label
+                >
+                <select
+                  name="cliente_veiculo_marca"
+                  id="cliente-veiculo-marca"
+                  class="form__select"
+                >
+                  <option value="" disabled selected>
+                    Selecione uma marca
+                  </option>
+                  <option value="fiat">Fiat</option>
+                  <option value="toyota">Toyota</option>
+                </select>
+              </div>
+
+              <div class="form__field">
+                <label for="cliente-veiculo-modelo" class="form__label"
+                  >Modelo do Veículo</label
+                >
+                <select
+                  name="cliente_veiculo_modelo"
+                  id="cliente-veiculo-modelo"
+                  class="form__select"
+                >
+                  <option value="" disabled selected>
+                    Selecione um modelo
+                  </option>
+                  <option value="palio">Palio</option>
+                  <option value="corolla">Corolla</option>
+                </select>
+              </div>
+
+              <div class="form__field">
+                <label for="cliente-veiculo-ano" class="form__label">Ano</label>
+                <input
+                  type="number"
+                  name="cliente_veiculo_ano"
+                  id="cliente-veiculo-ano"
+                  class="form__input form__input--number"
+                  placeholder="Ano do veículo"
+                  min="1000"
+                  step="1"
+                />
+              </div>
+
+              <div class="form__field">
+                <label for="cliente-veiculo-cor" class="form__label">Cor</label>
+                <input
+                  type="text"
+                  name="cliente_veiculo_cor"
+                  id="cliente-veiculo-cor"
+                  class="form__input"
+                  placeholder="Cor do veículo"
+                  minlength="4"
+                  maxlength="30"
+                />
+              </div>
+
+              <div class="form__field">
+                <label for="cliente-veiculo-placa" class="form__label"
+                  >Placa</label
+                >
+                <input
+                  type="text"
+                  name="cliente_veiculo_placa"
+                  id="cliente-veiculo-placa"
+                  class="form__input"
+                  placeholder="Placa do veículo"
+                  minlength="7"
+                  maxlength="7"
+                />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label">Escolha o Serviço</label>
+                <div class="form__radio-group">
+                  <label class="form__radio-card" for="servico-lavagem-simples">
+                    <input
+                      type="radio"
+                      name="servico"
+                      value="lavagem_simples"
+                      id="servico-lavagem-simples"
+                      class="form__input form__input--radio"
+                    />
+                    <div class="form__radio-content">
+                      <span class="form__radio-label">Lavagem Simples</span>
+                      <span class="form__radio-description"
+                        >Limpeza básica para manter seu veículo
+                        apresentável.</span
+                      >
+                    </div>
+                  </label>
+
+                  <label
+                    class="form__radio-card"
+                    for="servico-lavagem-completa"
+                  >
+                    <input
+                      type="radio"
+                      name="servico"
+                      value="lavagem_completa"
+                      id="servico-lavagem-completa"
+                      class="form__input form__input--radio"
+                    />
+                    <div class="form__radio-content">
+                      <span class="form__radio-label">Lavagem Completa</span>
+                      <span class="form__radio-description"
+                        >Lavagem detalhada com limpeza interna e externa.</span
+                      >
+                    </div>
+                  </label>
+
+                  <label class="form__radio-card" for="servico-lavagem-tecnica">
+                    <input
+                      type="radio"
+                      name="servico"
+                      value="lavagem_tecnica"
+                      id="servico-lavagem-tecnica"
+                      class="form__input form__input--radio"
+                    />
+                    <div class="form__radio-content">
+                      <span class="form__radio-label">Lavagem Técnica</span>
+                      <span class="form__radio-description"
+                        >Serviço especializado com cuidados técnicos
+                        avançados.</span
+                      >
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form__field">
+                <div class="form__button-wrapper">
+                  <button type="submit" class="form__button btn--primary">
+                    Agendar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>

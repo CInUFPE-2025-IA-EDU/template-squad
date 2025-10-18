@@ -10,7 +10,9 @@
     "prettier-fix": "prettier --write docs/"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "@eslint/js": "^9.38.0",
+    "eslint": "^8.57.1",
+    "globals": "^16.4.0",
     "html-validate": "^8.7.4",
     "prettier": "^3.3.3"
   }
